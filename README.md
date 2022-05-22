@@ -1,1 +1,2 @@
-# Week-one ^)  
+Task is:
+Inside this repository you should create the branch "feature", then you have to create 3 commits and squash them into 1(git rebase -i) and merge this new commit into master branch. Inside task1, task2 and task3 folders you can see your tasks. After finishing them , you should create commits for each of one(three commits) and you should create commits history according to this image "commit_scheme.jpg".

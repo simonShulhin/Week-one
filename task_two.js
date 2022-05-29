@@ -1,15 +1,14 @@
-function grid(N) {
-    let sum = '';
-    let abc = 'abcdefghijklmnopqrstuvwxyz'
-    let repeated = abc.repeat(10);
-    if (N < 0){
-      return null;
-    } else if(N == 0){
-      return '';
-    } else if(N == 1){
-      return 'a';
+function grid(n) {
+  let abc = "abcdefghijklmnopqrstuvwxyz";
+  if (n < 0) return null
+  let arr = [];
+
+  for (let i = 0; i < n; i++) {
+    let cell = [];
+    for (let k = i; k < n + i; k++) {
+      cell.push(abc[k % 26])
     }
-    for (let i=0; i<N; i++){
-      sum += repeated.slice(i,((i==0) ? N : N+i)).split("").join(' ') + '\n'
-    } return sum.slice(0,sum.length-1)
+    arr.push(cell)
   }
+  return arr
+}

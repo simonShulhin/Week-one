@@ -1,6 +1,6 @@
 function calculate (expected) {
     let array = expected.split(' ')
-  
+  // все добре, але краще використовувати switch
     if (array[1] == '+') {
       return array[0] + array[2]
     }

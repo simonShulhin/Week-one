@@ -11,5 +11,8 @@ function grid(N) {
     }
     for (let i=0; i<N; i++){
       sum += repeated.slice(i,((i==0) ? N : N+i)).split("").join(' ') + '\n'
-    } return sum.slice(0,sum.length-1)
+    } 
+    // ти маєш повертати масив масивів, наприклад grid(3) --> [['a','b','c'],['b','c','d'],['c','d','e']]
+    // треба переробити
+    return sum.slice(0,sum.length-1)
   }
